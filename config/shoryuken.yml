@@ -1,0 +1,4 @@
+delay: 25
+concurrency: 3
+queues:
+  - homma-tech-blog-test
