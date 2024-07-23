@@ -4,3 +4,11 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
+
+task :print_wakuwaku do
+  File.open("log/confirmation.log", "a") do |f|
+    f.puts "#{Time.now}: 未来のワクワクさん"
+  end
+
+  puts "未来のワクワクさん"
+end
